@@ -1,0 +1,540 @@
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to False.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.31.2.217:8501
+  External URL: http://3.38.162.232:8501
+
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to False.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.31.2.217:8501
+  External URL: http://13.124.84.169:8501
+
+  Stopping...
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to False.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.31.2.217:8501
+  External URL: http://13.124.84.169:8501
+
+  Stopping...
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to False.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.31.2.217:8501
+  External URL: http://13.124.84.169:8501
+
+2024-02-16 07:21:57.164 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 535, in _run_script
+    exec(code, module.__dict__)
+  File "/home/ubuntu/app/server.py", line 201, in <module>
+    main()
+  File "/home/ubuntu/app/server.py", line 199, in main
+    app(es)
+  File "/home/ubuntu/app/server.py", line 190, in app
+    result3 = queryForFindSimilarPronun(name, es)
+  File "/home/ubuntu/app/server.py", line 108, in queryForFindSimilarPronun
+    score = get_score(ipa_name, ans["_source"]["ipa_title"])
+  File "/home/ubuntu/app/PronunciationEvaluator/pronun.py", line 223, in get_score
+    return get_score(s2, s1, s1, debug)
+  File "/home/ubuntu/app/PronunciationEvaluator/pronun.py", line 241, in get_score
+    values_ans, _, _ = mapping_ipa_with_value(s1)
+  File "/home/ubuntu/app/PronunciationEvaluator/pronun.py", line 73, in mapping_ipa_with_value
+    vowel_wps_ = vowel_wps[vowels.loc[vowels["IPA"] == ipa]["조음좌우위치"].iloc[0]]
+KeyError: 'Mid'
+2024-02-16 07:22:01.823 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 535, in _run_script
+    exec(code, module.__dict__)
+  File "/home/ubuntu/app/server.py", line 201, in <module>
+    main()
+  File "/home/ubuntu/app/server.py", line 199, in main
+    app(es)
+  File "/home/ubuntu/app/server.py", line 190, in app
+    result3 = queryForFindSimilarPronun(name, es)
+  File "/home/ubuntu/app/server.py", line 108, in queryForFindSimilarPronun
+    score = get_score(ipa_name, ans["_source"]["ipa_title"])
+  File "/home/ubuntu/app/PronunciationEvaluator/pronun.py", line 223, in get_score
+    return get_score(s2, s1, s1, debug)
+  File "/home/ubuntu/app/PronunciationEvaluator/pronun.py", line 241, in get_score
+    values_ans, _, _ = mapping_ipa_with_value(s1)
+  File "/home/ubuntu/app/PronunciationEvaluator/pronun.py", line 73, in mapping_ipa_with_value
+    vowel_wps_ = vowel_wps[vowels.loc[vowels["IPA"] == ipa]["조음좌우위치"].iloc[0]]
+KeyError: 'Mid'
+2024-02-16 07:23:20.503 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 535, in _run_script
+    exec(code, module.__dict__)
+  File "/home/ubuntu/app/server.py", line 201, in <module>
+    main()
+  File "/home/ubuntu/app/server.py", line 199, in main
+    app(es)
+  File "/home/ubuntu/app/server.py", line 190, in app
+    result3 = queryForFindSimilarPronun(name, es)
+  File "/home/ubuntu/app/server.py", line 108, in queryForFindSimilarPronun
+    score = get_score(ipa_name, ans["_source"]["ipa_title"])
+  File "/home/ubuntu/app/PronunciationEvaluator/pronun.py", line 223, in get_score
+    return get_score(s2, s1, s1, debug)
+  File "/home/ubuntu/app/PronunciationEvaluator/pronun.py", line 241, in get_score
+    values_ans, _, _ = mapping_ipa_with_value(s1)
+  File "/home/ubuntu/app/PronunciationEvaluator/pronun.py", line 73, in mapping_ipa_with_value
+    vowel_wps_ = vowel_wps[vowels.loc[vowels["IPA"] == ipa]["조음좌우위치"].iloc[0]]
+KeyError: 'Mid'
+2024-02-16 07:24:51.279 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 535, in _run_script
+    exec(code, module.__dict__)
+  File "/home/ubuntu/app/server.py", line 201, in <module>
+    main()
+  File "/home/ubuntu/app/server.py", line 199, in main
+    app(es)
+  File "/home/ubuntu/app/server.py", line 190, in app
+    result3 = queryForFindSimilarPronun(name, es)
+  File "/home/ubuntu/app/server.py", line 108, in queryForFindSimilarPronun
+    score = get_score(ipa_name, ans["_source"]["ipa_title"])
+  File "/home/ubuntu/app/PronunciationEvaluator/pronun.py", line 223, in get_score
+    return get_score(s2, s1, s1, debug)
+  File "/home/ubuntu/app/PronunciationEvaluator/pronun.py", line 241, in get_score
+    values_ans, _, _ = mapping_ipa_with_value(s1)
+  File "/home/ubuntu/app/PronunciationEvaluator/pronun.py", line 73, in mapping_ipa_with_value
+    vowel_wps_ = vowel_wps[vowels.loc[vowels["IPA"] == ipa]["조음좌우위치"].iloc[0]]
+KeyError: 'Mid'
+2024-02-16 07:27:18.699 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 535, in _run_script
+    exec(code, module.__dict__)
+  File "/home/ubuntu/app/server.py", line 201, in <module>
+    main()
+  File "/home/ubuntu/app/server.py", line 199, in main
+    app(es)
+  File "/home/ubuntu/app/server.py", line 190, in app
+    result3 = queryForFindSimilarPronun(name, es)
+  File "/home/ubuntu/app/server.py", line 108, in queryForFindSimilarPronun
+    score = get_score(ipa_name, ans["_source"]["ipa_title"])
+  File "/home/ubuntu/app/PronunciationEvaluator/pronun.py", line 223, in get_score
+    return get_score(s2, s1, s1, debug)
+  File "/home/ubuntu/app/PronunciationEvaluator/pronun.py", line 241, in get_score
+    values_ans, _, _ = mapping_ipa_with_value(s1)
+  File "/home/ubuntu/app/PronunciationEvaluator/pronun.py", line 73, in mapping_ipa_with_value
+    vowel_wps_ = vowel_wps[vowels.loc[vowels["IPA"] == ipa]["조음좌우위치"].iloc[0]]
+KeyError: 'Mid'
+2024-02-16 07:28:11.683 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 535, in _run_script
+    exec(code, module.__dict__)
+  File "/home/ubuntu/app/server.py", line 201, in <module>
+    main()
+  File "/home/ubuntu/app/server.py", line 199, in main
+    app(es)
+  File "/home/ubuntu/app/server.py", line 190, in app
+    result3 = queryForFindSimilarPronun(name, es)
+  File "/home/ubuntu/app/server.py", line 108, in queryForFindSimilarPronun
+    score = get_score(ipa_name, ans["_source"]["ipa_title"])
+  File "/home/ubuntu/app/PronunciationEvaluator/pronun.py", line 223, in get_score
+    return get_score(s2, s1, s1, debug)
+  File "/home/ubuntu/app/PronunciationEvaluator/pronun.py", line 241, in get_score
+    values_ans, _, _ = mapping_ipa_with_value(s1)
+  File "/home/ubuntu/app/PronunciationEvaluator/pronun.py", line 73, in mapping_ipa_with_value
+    vowel_wps_ = vowel_wps[vowels.loc[vowels["IPA"] == ipa]["조음좌우위치"].iloc[0]]
+KeyError: 'Mid'
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to False.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.31.2.217:8501
+  External URL: http://13.124.84.169:8501
+
+2024-02-16 07:37:59.493 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 535, in _run_script
+    exec(code, module.__dict__)
+  File "/home/ubuntu/app/server.py", line 201, in <module>
+    main()
+  File "/home/ubuntu/app/server.py", line 199, in main
+    app(es)
+  File "/home/ubuntu/app/server.py", line 191, in app
+    if result3["result"]:
+TypeError: 'NoneType' object is not subscriptable
+2024-02-16 07:39:09.994 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 535, in _run_script
+    exec(code, module.__dict__)
+  File "/home/ubuntu/app/server.py", line 201, in <module>
+    main()
+  File "/home/ubuntu/app/server.py", line 199, in main
+    app(es)
+  File "/home/ubuntu/app/server.py", line 191, in app
+    if result3["result"]:
+TypeError: 'NoneType' object is not subscriptable
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to False.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.31.2.217:8501
+  External URL: http://13.124.84.169:8501
+
+2024-02-16 07:40:43.026 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 535, in _run_script
+    exec(code, module.__dict__)
+  File "/home/ubuntu/app/server.py", line 201, in <module>
+    main()
+  File "/home/ubuntu/app/server.py", line 199, in main
+    app(es)
+  File "/home/ubuntu/app/server.py", line 191, in app
+    if result3["result"]:
+TypeError: 'NoneType' object is not subscriptable
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to False.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.31.2.217:8501
+  External URL: http://13.124.84.169:8501
+
+
+  A new version of Streamlit is available.
+
+  See what's new at https://discuss.streamlit.io/c/announcements
+
+  Enter the following command to upgrade:
+  $ pip install streamlit --upgrade
+
+2024-02-16 07:45:46.958 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 535, in _run_script
+    exec(code, module.__dict__)
+  File "/home/ubuntu/app/server.py", line 202, in <module>
+    main()
+  File "/home/ubuntu/app/server.py", line 200, in main
+    app(es)
+  File "/home/ubuntu/app/server.py", line 192, in app
+    if result3["result"]:
+TypeError: 'NoneType' object is not subscriptable
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to False.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.31.2.217:8501
+  External URL: http://13.124.84.169:8501
+
+{'took': 11, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 9, 'relation': 'eq'}, 'max_score': 8.485142, 'hits': [{'_index': 'romanized_titles', '_id': 'm0iwsI0Bql_8TwJmzIsH', '_score': 8.485142, '_source': {'ipa_title': 'kɯmba̠k̚', 'classificationCode': 30, 'applicationStatus': '등록', 'registrationDate': 20171201.0, 'title': '금박', 'Unnamed: 0': 50817, 'applicationDate': 20170111.0}}, {'_index': 'romanized_titles', '_id': 'vEiwsI0Bql_8TwJm27Zj', '_score': 6.8134346, '_source': {'ipa_title': 'ɥiɭba̠p̚] ~ [yɭba̠p̚willbab*', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20180326.0, 'title': '윌밥 WILLBAB', 'Unnamed: 0': 124379, 'applicationDate': 20170612.0}}, {'_index': 'romanized_titles', '_id': 'I_2wsI0BxgCw0pOG2Mpk', '_score': 6.0563855, '_source': {'ipa_title': 'sʰo̞nsʰuɡimba̠p̚a̠wʌ̹βo̞msonsoo* kimbap*', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20160707.0, 'title': '손수김밥 아워홈 Sonsoo KimBap', 'Unnamed: 0': 113614, 'applicationDate': 20151130.0}}, {'_index': 'romanized_titles', '_id': 'o0iwsI0Bql_8TwJmzJYJ', '_score': 5.0595694, '_source': {'ipa_title': 'wʌ̹nd͡ʑo̞t͡ɕʰʌ̹ŋdo̞ɦa̠ɭme̞ɡimba̠p̚80ɲjʌ̹nt͡ɕʌ̹ntʰo̞ŋcheongdo* ˈgrændˌmɑz kimbap*', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20160718.0, 'title': "원조 청도할매김밥 80년 전통 CHEONGDO GRANDMA'S KIMBAP", 'Unnamed: 0': 59767, 'applicationDate': 20151002.0}}, {'_index': 'romanized_titles', '_id': 'OP2wsI0BxgCw0pOG0ret', '_score': 5.0595694, '_source': {'ipa_title': "ha̠s͈ɯk͈o̞ma̠ɡimba̠p̚ha's* ˈlɪtəl kimbap*", 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20200827.0, 'title': "하쓰꼬마김밥 Ha's Little Kimbap", 'Unnamed: 0': 101647, 'applicationDate': 20190702.0}}, {'_index': 'romanized_titles', '_id': '-1-wsI0B-J0-X8201YOT', '_score': 5.0595694, '_source': {'ipa_title': 't͡ɕe̞ma̠nikimba̠p̚ˈhæpi kimbap* deɪ', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20220521.0, 'title': '재마니 김밥 HAPPY KIMBAP DAY', 'Unnamed: 0': 107831, 'applicationDate': 20201217.0}}, {'_index': 'romanized_titles', '_id': 'f0iwsI0Bql_8TwJm269h', '_score': 5.0595694, '_source': {'ipa_title': 't͡ɕa̠ŋinɡimba̠p̚ˈprimiəm kimbap* jangin*', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20200922.0, 'title': '장인김밥 PREMIUM KIMBAP JANGIN', 'Unnamed: 0': 121537, 'applicationDate': 20190820.0}}, {'_index': 'romanized_titles', '_id': 'z_2wsI0BxgCw0pOG0rWt', '_score': 4.34451, '_source': {'ipa_title': 'kimd͡ʑisʰʌ̹ntʰe̞ja̠ŋɡimba̠p̚kɪm jisun* taeyang* kimbap*', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20200303.0, 'title': '김지선태양김밥 KIM JISUN TAEYANG KIMBAP', 'Unnamed: 0': 101225, 'applicationDate': 20190516.0}}, {'_index': 'romanized_titles', '_id': 'E1-wsI0B-J0-X8201YuV', '_score': 4.34451, '_source': {'ipa_title': 'ˈroʊlɪŋ kɪm ˌvɛʤəˈtɛˌriən kimbap*', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20181025.0, 'title': 'Rolling kim Vegetarian Kimbap', 'Unnamed: 0': 109997, 'applicationDate': 20180213.0}}]}}
+kɯmba̠k̚
+ɥiɭba̠p̚] ~ [yɭba̠p̚willbab*
+sʰo̞nsʰuɡimba̠p̚a̠wʌ̹βo̞msonsoo* kimbap*
+wʌ̹nd͡ʑo̞t͡ɕʰʌ̹ŋdo̞ɦa̠ɭme̞ɡimba̠p̚80ɲjʌ̹nt͡ɕʌ̹ntʰo̞ŋcheongdo* ˈgrændˌmɑz kimbap*
+ha̠s͈ɯk͈o̞ma̠ɡimba̠p̚ha's* ˈlɪtəl kimbap*
+t͡ɕe̞ma̠nikimba̠p̚ˈhæpi kimbap* deɪ
+t͡ɕa̠ŋinɡimba̠p̚ˈprimiəm kimbap* jangin*
+kimd͡ʑisʰʌ̹ntʰe̞ja̠ŋɡimba̠p̚kɪm jisun* taeyang* kimbap*
+ˈroʊlɪŋ kɪm ˌvɛʤəˈtɛˌriən kimbap*
+{'took': 25, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 9, 'relation': 'eq'}, 'max_score': 8.485142, 'hits': [{'_index': 'romanized_titles', '_id': 'm0iwsI0Bql_8TwJmzIsH', '_score': 8.485142, '_source': {'ipa_title': 'kɯmba̠k̚', 'classificationCode': 30, 'applicationStatus': '등록', 'registrationDate': 20171201.0, 'title': '금박', 'Unnamed: 0': 50817, 'applicationDate': 20170111.0}}, {'_index': 'romanized_titles', '_id': 'vEiwsI0Bql_8TwJm27Zj', '_score': 6.8134346, '_source': {'ipa_title': 'ɥiɭba̠p̚] ~ [yɭba̠p̚willbab*', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20180326.0, 'title': '윌밥 WILLBAB', 'Unnamed: 0': 124379, 'applicationDate': 20170612.0}}, {'_index': 'romanized_titles', '_id': 'I_2wsI0BxgCw0pOG2Mpk', '_score': 6.0563855, '_source': {'ipa_title': 'sʰo̞nsʰuɡimba̠p̚a̠wʌ̹βo̞msonsoo* kimbap*', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20160707.0, 'title': '손수김밥 아워홈 Sonsoo KimBap', 'Unnamed: 0': 113614, 'applicationDate': 20151130.0}}, {'_index': 'romanized_titles', '_id': 'o0iwsI0Bql_8TwJmzJYJ', '_score': 5.0595694, '_source': {'ipa_title': 'wʌ̹nd͡ʑo̞t͡ɕʰʌ̹ŋdo̞ɦa̠ɭme̞ɡimba̠p̚80ɲjʌ̹nt͡ɕʌ̹ntʰo̞ŋcheongdo* ˈgrændˌmɑz kimbap*', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20160718.0, 'title': "원조 청도할매김밥 80년 전통 CHEONGDO GRANDMA'S KIMBAP", 'Unnamed: 0': 59767, 'applicationDate': 20151002.0}}, {'_index': 'romanized_titles', '_id': 'OP2wsI0BxgCw0pOG0ret', '_score': 5.0595694, '_source': {'ipa_title': "ha̠s͈ɯk͈o̞ma̠ɡimba̠p̚ha's* ˈlɪtəl kimbap*", 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20200827.0, 'title': "하쓰꼬마김밥 Ha's Little Kimbap", 'Unnamed: 0': 101647, 'applicationDate': 20190702.0}}, {'_index': 'romanized_titles', '_id': '-1-wsI0B-J0-X8201YOT', '_score': 5.0595694, '_source': {'ipa_title': 't͡ɕe̞ma̠nikimba̠p̚ˈhæpi kimbap* deɪ', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20220521.0, 'title': '재마니 김밥 HAPPY KIMBAP DAY', 'Unnamed: 0': 107831, 'applicationDate': 20201217.0}}, {'_index': 'romanized_titles', '_id': 'f0iwsI0Bql_8TwJm269h', '_score': 5.0595694, '_source': {'ipa_title': 't͡ɕa̠ŋinɡimba̠p̚ˈprimiəm kimbap* jangin*', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20200922.0, 'title': '장인김밥 PREMIUM KIMBAP JANGIN', 'Unnamed: 0': 121537, 'applicationDate': 20190820.0}}, {'_index': 'romanized_titles', '_id': 'z_2wsI0BxgCw0pOG0rWt', '_score': 4.34451, '_source': {'ipa_title': 'kimd͡ʑisʰʌ̹ntʰe̞ja̠ŋɡimba̠p̚kɪm jisun* taeyang* kimbap*', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20200303.0, 'title': '김지선태양김밥 KIM JISUN TAEYANG KIMBAP', 'Unnamed: 0': 101225, 'applicationDate': 20190516.0}}, {'_index': 'romanized_titles', '_id': 'E1-wsI0B-J0-X8201YuV', '_score': 4.34451, '_source': {'ipa_title': 'ˈroʊlɪŋ kɪm ˌvɛʤəˈtɛˌriən kimbap*', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20181025.0, 'title': 'Rolling kim Vegetarian Kimbap', 'Unnamed: 0': 109997, 'applicationDate': 20180213.0}}]}}
+kɯmba̠k̚
+ɥiɭba̠p̚] ~ [yɭba̠p̚willbab*
+sʰo̞nsʰuɡimba̠p̚a̠wʌ̹βo̞msonsoo* kimbap*
+wʌ̹nd͡ʑo̞t͡ɕʰʌ̹ŋdo̞ɦa̠ɭme̞ɡimba̠p̚80ɲjʌ̹nt͡ɕʌ̹ntʰo̞ŋcheongdo* ˈgrændˌmɑz kimbap*
+ha̠s͈ɯk͈o̞ma̠ɡimba̠p̚ha's* ˈlɪtəl kimbap*
+t͡ɕe̞ma̠nikimba̠p̚ˈhæpi kimbap* deɪ
+t͡ɕa̠ŋinɡimba̠p̚ˈprimiəm kimbap* jangin*
+kimd͡ʑisʰʌ̹ntʰe̞ja̠ŋɡimba̠p̚kɪm jisun* taeyang* kimbap*
+ˈroʊlɪŋ kɪm ˌvɛʤəˈtɛˌriən kimbap*
+{'took': 7, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 9, 'relation': 'eq'}, 'max_score': 8.485142, 'hits': [{'_index': 'romanized_titles', '_id': 'm0iwsI0Bql_8TwJmzIsH', '_score': 8.485142, '_source': {'ipa_title': 'kɯmba̠k̚', 'classificationCode': 30, 'applicationStatus': '등록', 'registrationDate': 20171201.0, 'title': '금박', 'Unnamed: 0': 50817, 'applicationDate': 20170111.0}}, {'_index': 'romanized_titles', '_id': 'vEiwsI0Bql_8TwJm27Zj', '_score': 6.8134346, '_source': {'ipa_title': 'ɥiɭba̠p̚] ~ [yɭba̠p̚willbab*', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20180326.0, 'title': '윌밥 WILLBAB', 'Unnamed: 0': 124379, 'applicationDate': 20170612.0}}, {'_index': 'romanized_titles', '_id': 'I_2wsI0BxgCw0pOG2Mpk', '_score': 6.0563855, '_source': {'ipa_title': 'sʰo̞nsʰuɡimba̠p̚a̠wʌ̹βo̞msonsoo* kimbap*', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20160707.0, 'title': '손수김밥 아워홈 Sonsoo KimBap', 'Unnamed: 0': 113614, 'applicationDate': 20151130.0}}, {'_index': 'romanized_titles', '_id': 'o0iwsI0Bql_8TwJmzJYJ', '_score': 5.0595694, '_source': {'ipa_title': 'wʌ̹nd͡ʑo̞t͡ɕʰʌ̹ŋdo̞ɦa̠ɭme̞ɡimba̠p̚80ɲjʌ̹nt͡ɕʌ̹ntʰo̞ŋcheongdo* ˈgrændˌmɑz kimbap*', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20160718.0, 'title': "원조 청도할매김밥 80년 전통 CHEONGDO GRANDMA'S KIMBAP", 'Unnamed: 0': 59767, 'applicationDate': 20151002.0}}, {'_index': 'romanized_titles', '_id': 'OP2wsI0BxgCw0pOG0ret', '_score': 5.0595694, '_source': {'ipa_title': "ha̠s͈ɯk͈o̞ma̠ɡimba̠p̚ha's* ˈlɪtəl kimbap*", 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20200827.0, 'title': "하쓰꼬마김밥 Ha's Little Kimbap", 'Unnamed: 0': 101647, 'applicationDate': 20190702.0}}, {'_index': 'romanized_titles', '_id': '-1-wsI0B-J0-X8201YOT', '_score': 5.0595694, '_source': {'ipa_title': 't͡ɕe̞ma̠nikimba̠p̚ˈhæpi kimbap* deɪ', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20220521.0, 'title': '재마니 김밥 HAPPY KIMBAP DAY', 'Unnamed: 0': 107831, 'applicationDate': 20201217.0}}, {'_index': 'romanized_titles', '_id': 'f0iwsI0Bql_8TwJm269h', '_score': 5.0595694, '_source': {'ipa_title': 't͡ɕa̠ŋinɡimba̠p̚ˈprimiəm kimbap* jangin*', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20200922.0, 'title': '장인김밥 PREMIUM KIMBAP JANGIN', 'Unnamed: 0': 121537, 'applicationDate': 20190820.0}}, {'_index': 'romanized_titles', '_id': 'z_2wsI0BxgCw0pOG0rWt', '_score': 4.34451, '_source': {'ipa_title': 'kimd͡ʑisʰʌ̹ntʰe̞ja̠ŋɡimba̠p̚kɪm jisun* taeyang* kimbap*', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20200303.0, 'title': '김지선태양김밥 KIM JISUN TAEYANG KIMBAP', 'Unnamed: 0': 101225, 'applicationDate': 20190516.0}}, {'_index': 'romanized_titles', '_id': 'E1-wsI0B-J0-X8201YuV', '_score': 4.34451, '_source': {'ipa_title': 'ˈroʊlɪŋ kɪm ˌvɛʤəˈtɛˌriən kimbap*', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20181025.0, 'title': 'Rolling kim Vegetarian Kimbap', 'Unnamed: 0': 109997, 'applicationDate': 20180213.0}}]}}
+kɯmba̠k̚
+ɥiɭba̠p̚] ~ [yɭba̠p̚willbab*
+sʰo̞nsʰuɡimba̠p̚a̠wʌ̹βo̞msonsoo* kimbap*
+wʌ̹nd͡ʑo̞t͡ɕʰʌ̹ŋdo̞ɦa̠ɭme̞ɡimba̠p̚80ɲjʌ̹nt͡ɕʌ̹ntʰo̞ŋcheongdo* ˈgrændˌmɑz kimbap*
+ha̠s͈ɯk͈o̞ma̠ɡimba̠p̚ha's* ˈlɪtəl kimbap*
+t͡ɕe̞ma̠nikimba̠p̚ˈhæpi kimbap* deɪ
+t͡ɕa̠ŋinɡimba̠p̚ˈprimiəm kimbap* jangin*
+kimd͡ʑisʰʌ̹ntʰe̞ja̠ŋɡimba̠p̚kɪm jisun* taeyang* kimbap*
+ˈroʊlɪŋ kɪm ˌvɛʤəˈtɛˌriən kimbap*
+{'took': 12, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 21, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 43, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 13, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 14, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 17, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 12, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 20, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 9, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 12, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 11, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 10, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 11, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 25, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 15, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 13, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 33, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 17, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 17, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 17, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 16, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 12, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 7, 'relation': 'eq'}, 'max_score': 8.509324, 'hits': [{'_index': 'romanized_titles', '_id': 'SUiwsI0Bql_8TwJm5Nrs', '_score': 8.509324, '_source': {'ipa_title': 'nst*pa̠io̞', 'classificationCode': 30, 'applicationStatus': '등록', 'registrationDate': 20160805.0, 'title': 'NST바이오', 'Unnamed: 0': 381992, 'applicationDate': 20151012.0}}, {'_index': 'romanized_titles', '_id': 'DF-wsI0B-J0-X820yG9Z', '_score': 8.4777, '_source': {'ipa_title': 'pacbot*', 'classificationCode': 40, 'applicationStatus': '등록', 'registrationDate': 20200601.0, 'title': 'PACBOT', 'Unnamed: 0': 23215, 'applicationDate': 20190520.0}}, {'_index': 'romanized_titles', '_id': '7_2wsI0BxgCw0pOG0ruv', '_score': 8.4777, '_source': {'ipa_title': 'ha̠ibo̞', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20171108.0, 'title': '하이보', 'Unnamed: 0': 103086, 'applicationDate': 20170522.0}}, {'_index': 'romanized_titles', '_id': 'TV-wsI0B-J0-X8201YmU', '_score': 8.4777, '_source': {'ipa_title': 'ja̠βo̞', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20211214.0, 'title': '야호', 'Unnamed: 0': 109449, 'applicationDate': 20201028.0}}, {'_index': 'romanized_titles', '_id': 'oEiwsI0Bql_8TwJm4sYS', '_score': 8.4777, '_source': {'ipa_title': 'pa̠me̞', 'classificationCode': 29, 'applicationStatus': '등록', 'registrationDate': 20160926.0, 'title': '밤애', 'Unnamed: 0': 297573, 'applicationDate': 20151216.0}}, {'_index': 'romanized_titles', '_id': '8UiwsI0Bql_8TwJmzIsH', '_score': 7.6299305, '_source': {'ipa_title': 'a̠ɾo̞', 'classificationCode': 29, 'applicationStatus': '등록', 'registrationDate': 20220510.0, 'title': '알오', 'Unnamed: 0': 51224, 'applicationDate': 20201030.0}}, {'_index': 'romanized_titles', '_id': '00iwsI0Bql_8TwJmz6Ag', '_score': 4.75896, '_source': {'ipa_title': 'pa̠io̞蔘*p͈uɾit͡ɕuɭɡiip̚pe̞ɾik͈a̠d͡ʑi全草*pa̠io̞xɯks͈a̠m', 'classificationCode': 33, 'applicationStatus': '등록', 'registrationDate': 20231030.0, 'title': '바이오蔘 뿌리, 줄기, 잎, 베리까지 全草바이오 흑삼', 'Unnamed: 0': 82026, 'applicationDate': 20230523.0}}]}}
+nst*pa̠io̞
+pacbot*
+{'took': 8, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 2, 'relation': 'eq'}, 'max_score': 11.883487, 'hits': [{'_index': 'romanized_titles', '_id': 'ZUiwsI0Bql_8TwJm5Nns', '_score': 11.883487, '_source': {'ipa_title': 'pa̠ɾo̞ja̠', 'classificationCode': 31, 'applicationStatus': '등록', 'registrationDate': 20160929.0, 'title': '바로야', 'Unnamed: 0': 381229, 'applicationDate': 20151211.0}}, {'_index': 'romanized_titles', '_id': 'bf2wsI0BxgCw0pOG0ryv', '_score': 10.026693, '_source': {'ipa_title': 'pa̠bija̠', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20150515.0, 'title': '바비야', 'Unnamed: 0': 103232, 'applicationDate': 20140814.0}}]}}
+pa̠ɾo̞ja̠
+{'took': 14, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 8, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 1, 'relation': 'eq'}, 'max_score': 8.912615, 'hits': [{'_index': 'romanized_titles', '_id': 'lV-wsI0B-J0-X8201YiU', '_score': 8.912615, '_source': {'ipa_title': 'ma̠d͡ʑi', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20130429.0, 'title': '마지', 'Unnamed: 0': 109234, 'applicationDate': 20120413.0}}]}}
+ma̠d͡ʑi
+{'took': 76, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 1, 'relation': 'eq'}, 'max_score': 8.912615, 'hits': [{'_index': 'romanized_titles', '_id': 'lV-wsI0B-J0-X8201YiU', '_score': 8.912615, '_source': {'ipa_title': 'ma̠d͡ʑi', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20130429.0, 'title': '마지', 'Unnamed: 0': 109234, 'applicationDate': 20120413.0}}]}}
+ma̠d͡ʑi
+{'took': 5, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 1, 'relation': 'eq'}, 'max_score': 8.912615, 'hits': [{'_index': 'romanized_titles', '_id': 'lV-wsI0B-J0-X8201YiU', '_score': 8.912615, '_source': {'ipa_title': 'ma̠d͡ʑi', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20130429.0, 'title': '마지', 'Unnamed: 0': 109234, 'applicationDate': 20120413.0}}]}}
+ma̠d͡ʑi
+{'took': 11, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 941, 'relation': 'eq'}, 'max_score': 4.0373073, 'hits': [{'_index': 'romanized_titles', '_id': '7f2wsI0BxgCw0pOG3unh', '_score': 4.0373073, '_source': {'ipa_title': 'muki* muki*', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20230904.0, 'title': 'MUKi MUKi', 'Unnamed: 0': 269738, 'applicationDate': 20230405.0}}, {'_index': 'romanized_titles', '_id': 'YF-wsI0B-J0-X820xVs0', '_score': 3.685761, '_source': {'ipa_title': 'muɭ', 'classificationCode': 29, 'applicationStatus': '등록', 'registrationDate': 20190327.0, 'title': '물', 'Unnamed: 0': 2730, 'applicationDate': 20180620.0}}, {'_index': 'romanized_titles', '_id': 'UP2wsI0BxgCw0pOG3uLg', '_score': 3.685761, '_source': {'ipa_title': 'muŋ', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20230801.0, 'title': '뭉', 'Unnamed: 0': 129823, 'applicationDate': 20220107.0}}, {'_index': 'romanized_titles', '_id': 'Xl-wsI0B-J0-X820xV81', '_score': 2.9596076, '_source': {'ipa_title': 'fʊl mun', 'classificationCode': 33, 'applicationStatus': '등록', 'registrationDate': 20150123.0, 'title': 'FULL MOON', 'Unnamed: 0': 7886, 'applicationDate': 20131218.0}}, {'_index': 'romanized_titles', '_id': '5F-wsI0B-J0-X820xWI2', '_score': 2.9596076, '_source': {'ipa_title': 'oui[wi*]', 'classificationCode': 33, 'applicationStatus': '등록', 'registrationDate': 20201106.0, 'title': 'Oui[wi]', 'Unnamed: 0': 11650, 'applicationDate': 20190719.0}}, {'_index': 'romanized_titles', '_id': 'ol-wsI0B-J0-X820xWM3', '_score': 2.9596076, '_source': {'ipa_title': 'ɛm muɪ', 'classificationCode': 33, 'applicationStatus': '등록', 'registrationDate': 20150424.0, 'title': 'M MUI', 'Unnamed: 0': 12101, 'applicationDate': 20140611.0}}, {'_index': 'romanized_titles', '_id': 'El-wsI0B-J0-X820yHFa', '_score': 2.9596076, '_source': {'ipa_title': 'inwʌ̹ɭsʰa̠ŋpʰjonu mun', 'classificationCode': 32, 'applicationStatus': '등록', 'registrationDate': 20080722.0, 'title': '인월상표 NEW MOON', 'Unnamed: 0': 24941, 'applicationDate': 20071224.0}}, {'_index': 'romanized_titles', '_id': 'G_2wsI0BxgCw0pOG0rat', '_score': 2.9596076, '_source': {'ipa_title': 'tʰe̞isʰɯtʰimunˈteɪsti mun', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20190502.0, 'title': '테이스티 문 Tasty moon', 'Unnamed: 0': 101310, 'applicationDate': 20180911.0}}, {'_index': 'romanized_titles', '_id': 'Gv2wsI0BxgCw0pOG0rit', '_score': 2.9596076, '_source': {'ipa_title': 'rɛd mun', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20191226.0, 'title': 'RED MOON', 'Unnamed: 0': 101920, 'applicationDate': 20180823.0}}, {'_index': 'romanized_titles', '_id': 'G_2wsI0BxgCw0pOG0r-w', '_score': 2.9596076, '_source': {'ipa_title': 'mun teppan*', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20190603.0, 'title': 'MOON TEPPAN', 'Unnamed: 0': 104041, 'applicationDate': 20180514.0}}]}}
+muki* muki*
+muɭ
+muŋ
+fʊl mun
+oui[wi*]
+ɛm muɪ
+inwʌ̹ɭsʰa̠ŋpʰjonu mun
+tʰe̞isʰɯtʰimunˈteɪsti mun
+rɛd mun
+mun teppan*
+{'took': 13, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+2024-02-16 13:27:20.466 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 535, in _run_script
+    exec(code, module.__dict__)
+  File "/home/ubuntu/app/server.py", line 202, in <module>
+    main()
+  File "/home/ubuntu/app/server.py", line 200, in main
+    app(es)
+  File "/home/ubuntu/app/server.py", line 192, in app
+    if result3["result"]:
+TypeError: 'NoneType' object is not subscriptable
+2024-02-16 13:28:02.799 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 535, in _run_script
+    exec(code, module.__dict__)
+  File "/home/ubuntu/app/server.py", line 202, in <module>
+    main()
+  File "/home/ubuntu/app/server.py", line 200, in main
+    app(es)
+  File "/home/ubuntu/app/server.py", line 192, in app
+    if result3["result"]:
+TypeError: 'NoneType' object is not subscriptable
+{'took': 13, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 14, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 31, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 46, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 14, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 1, 'relation': 'eq'}, 'max_score': 6.890108, 'hits': [{'_index': 'romanized_titles', '_id': 'g0iwsI0Bql_8TwJm27tj', '_score': 6.890108, '_source': {'ipa_title': 'kjot͡ɕʰo̞nt͡ɕʰikçinɪt teɪsts ˈbɛtər! kyochon*', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20060601.0, 'title': '교촌치킨 It tastes better! KyoChon', 'Unnamed: 0': 126268, 'applicationDate': 20050525.0}}]}}
+kjot͡ɕʰo̞nt͡ɕʰikçinɪt teɪsts ˈbɛtər! kyochon*
+{'took': 15, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 1, 'relation': 'eq'}, 'max_score': 6.890108, 'hits': [{'_index': 'romanized_titles', '_id': 'g0iwsI0Bql_8TwJm27tj', '_score': 6.890108, '_source': {'ipa_title': 'kjot͡ɕʰo̞nt͡ɕʰikçinɪt teɪsts ˈbɛtər! kyochon*', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20060601.0, 'title': '교촌치킨 It tastes better! KyoChon', 'Unnamed: 0': 126268, 'applicationDate': 20050525.0}}]}}
+kjot͡ɕʰo̞nt͡ɕʰikçinɪt teɪsts ˈbɛtər! kyochon*
+{'took': 14, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 1, 'relation': 'eq'}, 'max_score': 6.890108, 'hits': [{'_index': 'romanized_titles', '_id': 'g0iwsI0Bql_8TwJm27tj', '_score': 6.890108, '_source': {'ipa_title': 'kjot͡ɕʰo̞nt͡ɕʰikçinɪt teɪsts ˈbɛtər! kyochon*', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20060601.0, 'title': '교촌치킨 It tastes better! KyoChon', 'Unnamed: 0': 126268, 'applicationDate': 20050525.0}}]}}
+kjot͡ɕʰo̞nt͡ɕʰikçinɪt teɪsts ˈbɛtər! kyochon*
+{'took': 13, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 1, 'relation': 'eq'}, 'max_score': 6.890108, 'hits': [{'_index': 'romanized_titles', '_id': 'g0iwsI0Bql_8TwJm27tj', '_score': 6.890108, '_source': {'ipa_title': 'kjot͡ɕʰo̞nt͡ɕʰikçinɪt teɪsts ˈbɛtər! kyochon*', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20060601.0, 'title': '교촌치킨 It tastes better! KyoChon', 'Unnamed: 0': 126268, 'applicationDate': 20050525.0}}]}}
+kjot͡ɕʰo̞nt͡ɕʰikçinɪt teɪsts ˈbɛtər! kyochon*
+{'took': 10, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 12, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 22, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 17, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 32, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 21, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 1, 'relation': 'eq'}, 'max_score': 12.533365, 'hits': [{'_index': 'romanized_titles', '_id': '7V-wsI0B-J0-X820xVo0', '_score': 12.533365, '_source': {'ipa_title': 't͡ɕa̠ŋt͡ɕʰuŋwa̠ŋ', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 19971202.0, 'title': '장충왕', 'Unnamed: 0': 2107, 'applicationDate': 19951202.0}}]}}
+t͡ɕa̠ŋt͡ɕʰuŋwa̠ŋ
+{'took': 10, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 2, 'relation': 'eq'}, 'max_score': 10.026693, 'hits': [{'_index': 'romanized_titles', '_id': 'O0iwsI0Bql_8TwJmzI8H', '_score': 10.026693, '_source': {'ipa_title': 'pʰo̞pʰo̞', 'classificationCode': 30, 'applicationStatus': '등록', 'registrationDate': 20130508.0, 'title': '포포', 'Unnamed: 0': 54589, 'applicationDate': 20120330.0}}, {'_index': 'romanized_titles', '_id': 'XEiwsI0Bql_8TwJm4s0T', '_score': 9.549231, '_source': {'ipa_title': 'kʰo̞bo̞', 'classificationCode': 30, 'applicationStatus': '등록', 'registrationDate': 19950324.0, 'title': '코보', 'Unnamed: 0': 307624, 'applicationDate': 19940118.0}}]}}
+pʰo̞pʰo̞
+kʰo̞bo̞
+{'took': 15, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 1, 'relation': 'eq'}, 'max_score': 11.697808, 'hits': [{'_index': 'romanized_titles', '_id': '7V-wsI0B-J0-X820xVo0', '_score': 11.697808, '_source': {'ipa_title': 't͡ɕa̠ŋt͡ɕʰuŋwa̠ŋ', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 19971202.0, 'title': '장충왕', 'Unnamed: 0': 2107, 'applicationDate': 19951202.0}}]}}
+t͡ɕa̠ŋt͡ɕʰuŋwa̠ŋ
+{'took': 10, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 25, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 16, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 37, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 9, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+2024-02-16 13:37:47.931 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 535, in _run_script
+    exec(code, module.__dict__)
+  File "/home/ubuntu/app/server.py", line 202, in <module>
+    main()
+  File "/home/ubuntu/app/server.py", line 200, in main
+    app(es)
+  File "/home/ubuntu/app/server.py", line 192, in app
+    if result3["result"]:
+TypeError: 'NoneType' object is not subscriptable
+2024-02-16 13:38:07.339 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 535, in _run_script
+    exec(code, module.__dict__)
+  File "/home/ubuntu/app/server.py", line 202, in <module>
+    main()
+  File "/home/ubuntu/app/server.py", line 200, in main
+    app(es)
+  File "/home/ubuntu/app/server.py", line 192, in app
+    if result3["result"]:
+TypeError: 'NoneType' object is not subscriptable
+2024-02-16 13:38:08.697 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 535, in _run_script
+    exec(code, module.__dict__)
+  File "/home/ubuntu/app/server.py", line 202, in <module>
+    main()
+  File "/home/ubuntu/app/server.py", line 200, in main
+    app(es)
+  File "/home/ubuntu/app/server.py", line 192, in app
+    if result3["result"]:
+TypeError: 'NoneType' object is not subscriptable
+2024-02-16 13:38:09.626 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 535, in _run_script
+    exec(code, module.__dict__)
+  File "/home/ubuntu/app/server.py", line 202, in <module>
+    main()
+  File "/home/ubuntu/app/server.py", line 200, in main
+    app(es)
+  File "/home/ubuntu/app/server.py", line 192, in app
+    if result3["result"]:
+TypeError: 'NoneType' object is not subscriptable
+{'took': 6, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 962, 'relation': 'eq'}, 'max_score': 0.0, 'hits': [{'_index': 'romanized_titles', '_id': 'ul-wsI0B-J0-X820xVo0', '_score': 0.0, '_source': {'ipa_title': 'ud͡ʑut͡ɕʰwe̞ɡa̠ŋ] ~ [ud͡ʑut͡ɕʰø̞ɡa̠ŋto̞ɕʰiɾa̠k̚no.1* dosirak* ˌkɔˈriən staɪl fud', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20150818.0, 'title': '우주최강 도시락 NO.1 Dosirak Korean Style Food', 'Unnamed: 0': 1562, 'applicationDate': 20140416.0}}, {'_index': 'romanized_titles', '_id': '0F-wsI0B-J0-X820xVo0', '_score': 0.0, '_source': {'ipa_title': 'te̞ɦa̠nminɡuk̚t͈e̞pʰjoɡo̞md͡ʑa̠ŋʌ̹kid͡ʑa̠ŋɡo̞md͡ʑa̠ŋʌ̹kimjʌ̹ŋɡɯnjʌ̹ŋɡɯnf&b* gijang* gomjangeo*', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20100203.0, 'title': '대한민국대표곰장어 기장곰장어 김영근 영근F&B Gijang Gomjangeo', 'Unnamed: 0': 1833, 'applicationDate': 20090820.0}}, {'_index': 'romanized_titles', '_id': 'GF-wsI0B-J0-X820xVs0', '_score': 0.0, '_source': {'ipa_title': 'meism* ə ˈfərnɪʧər ˈmeɪkər', 'classificationCode': 40, 'applicationStatus': '등록', 'registrationDate': 20190724.0, 'title': 'meism a furniture maker', 'Unnamed: 0': 2318, 'applicationDate': 20181106.0}}, {'_index': 'romanized_titles', '_id': 'Tl-wsI0B-J0-X820xVs0', '_score': 0.0, '_source': {'ipa_title': '7 drim', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20181211.0, 'title': '7 DREAM', 'Unnamed: 0': 2631, 'applicationDate': 20180430.0}}, {'_index': 'romanized_titles', '_id': 'bl-wsI0B-J0-X820xVs0', '_score': 0.0, '_source': {'ipa_title': 'əm i ʧɔɪs fər ˈjuˈɛs', 'classificationCode': 30, 'applicationStatus': '등록', 'registrationDate': 20190107.0, 'title': "I'm e CHOICE FOR US", 'Unnamed: 0': 2796, 'applicationDate': 20180308.0}}, {'_index': 'romanized_titles', '_id': 'd1-wsI0B-J0-X820xVs0', '_score': 0.0, '_source': {'ipa_title': 'ɑ', 'classificationCode': 33, 'applicationStatus': '등록', 'registrationDate': 20170825.0, 'title': 'ah', 'Unnamed: 0': 2874, 'applicationDate': 20161031.0}}, {'_index': 'romanized_titles', '_id': '51-wsI0B-J0-X820xVs0', '_score': 0.0, '_source': {'ipa_title': 't͡ɕa̠ŋsʰuo̞mid͡ʑa̠ma̠ɕʰinnɯnɾe̞dɯpʰudɯo̞mid͡ʑa̠jagnsu* o-mija* rɛd fud', 'classificationCode': 32, 'applicationStatus': '등록', 'registrationDate': 20150706.0, 'title': '장수오미자 맛있는 레드푸드 오미자 JAGNSU O-MIJA RED FOOD', 'Unnamed: 0': 3422, 'applicationDate': 20141013.0}}, {'_index': 'romanized_titles', '_id': 'oF-wsI0B-J0-X820xVw0', '_score': 0.0, '_source': {'ipa_title': 'pʰɯɾimno̞d͡ʑɯv=b* ˈproʊˌgræm', 'classificationCode': 29, 'applicationStatus': '등록', 'registrationDate': 20080804.0, 'title': '프림로즈 V=B PROGRAM', 'Unnamed: 0': 4002, 'applicationDate': 20070528.0}}, {'_index': 'romanized_titles', '_id': '6l-wsI0B-J0-X820xVw0', '_score': 0.0, '_source': {'ipa_title': '7 klɑs də lɔs siete*', 'classificationCode': 33, 'applicationStatus': '등록', 'registrationDate': 20090325.0, 'title': '7 Clos de los Siete', 'Unnamed: 0': 4175, 'applicationDate': 20080114.0}}, {'_index': 'romanized_titles', '_id': 'd1-wsI0B-J0-X820xV01', '_score': 0.0, '_source': {'ipa_title': 'aɪ dɑl ˈstɔri əm ə dɪˈzaɪnər', 'classificationCode': 40, 'applicationStatus': '등록', 'registrationDate': 20160411.0, 'title': "i Doll Story I'm a designer", 'Unnamed: 0': 5393, 'applicationDate': 20150612.0}}]}}
+ud͡ʑut͡ɕʰwe̞ɡa̠ŋ] ~ [ud͡ʑut͡ɕʰø̞ɡa̠ŋto̞ɕʰiɾa̠k̚no.1* dosirak* ˌkɔˈriən staɪl fud
+{'took': 19, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 13, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 14, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 7, 'relation': 'eq'}, 'max_score': 8.509324, 'hits': [{'_index': 'romanized_titles', '_id': 'SUiwsI0Bql_8TwJm5Nrs', '_score': 8.509324, '_source': {'ipa_title': 'nst*pa̠io̞', 'classificationCode': 30, 'applicationStatus': '등록', 'registrationDate': 20160805.0, 'title': 'NST바이오', 'Unnamed: 0': 381992, 'applicationDate': 20151012.0}}, {'_index': 'romanized_titles', '_id': 'DF-wsI0B-J0-X820yG9Z', '_score': 8.4777, '_source': {'ipa_title': 'pacbot*', 'classificationCode': 40, 'applicationStatus': '등록', 'registrationDate': 20200601.0, 'title': 'PACBOT', 'Unnamed: 0': 23215, 'applicationDate': 20190520.0}}, {'_index': 'romanized_titles', '_id': '7_2wsI0BxgCw0pOG0ruv', '_score': 8.4777, '_source': {'ipa_title': 'ha̠ibo̞', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20171108.0, 'title': '하이보', 'Unnamed: 0': 103086, 'applicationDate': 20170522.0}}, {'_index': 'romanized_titles', '_id': 'TV-wsI0B-J0-X8201YmU', '_score': 8.4777, '_source': {'ipa_title': 'ja̠βo̞', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20211214.0, 'title': '야호', 'Unnamed: 0': 109449, 'applicationDate': 20201028.0}}, {'_index': 'romanized_titles', '_id': 'oEiwsI0Bql_8TwJm4sYS', '_score': 8.4777, '_source': {'ipa_title': 'pa̠me̞', 'classificationCode': 29, 'applicationStatus': '등록', 'registrationDate': 20160926.0, 'title': '밤애', 'Unnamed: 0': 297573, 'applicationDate': 20151216.0}}, {'_index': 'romanized_titles', '_id': '8UiwsI0Bql_8TwJmzIsH', '_score': 7.6299305, '_source': {'ipa_title': 'a̠ɾo̞', 'classificationCode': 29, 'applicationStatus': '등록', 'registrationDate': 20220510.0, 'title': '알오', 'Unnamed: 0': 51224, 'applicationDate': 20201030.0}}, {'_index': 'romanized_titles', '_id': '00iwsI0Bql_8TwJmz6Ag', '_score': 4.75896, '_source': {'ipa_title': 'pa̠io̞蔘*p͈uɾit͡ɕuɭɡiip̚pe̞ɾik͈a̠d͡ʑi全草*pa̠io̞xɯks͈a̠m', 'classificationCode': 33, 'applicationStatus': '등록', 'registrationDate': 20231030.0, 'title': '바이오蔘 뿌리, 줄기, 잎, 베리까지 全草바이오 흑삼', 'Unnamed: 0': 82026, 'applicationDate': 20230523.0}}]}}
+nst*pa̠io̞
+pacbot*
+{'took': 16, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 12, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 21, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 14, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 22, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+2024-02-16 13:40:22.240 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 535, in _run_script
+    exec(code, module.__dict__)
+  File "/home/ubuntu/app/server.py", line 202, in <module>
+    main()
+  File "/home/ubuntu/app/server.py", line 200, in main
+    app(es)
+  File "/home/ubuntu/app/server.py", line 192, in app
+    if result3["result"]:
+TypeError: 'NoneType' object is not subscriptable
+2024-02-16 13:40:29.491 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 535, in _run_script
+    exec(code, module.__dict__)
+  File "/home/ubuntu/app/server.py", line 202, in <module>
+    main()
+  File "/home/ubuntu/app/server.py", line 200, in main
+    app(es)
+  File "/home/ubuntu/app/server.py", line 192, in app
+    if result3["result"]:
+TypeError: 'NoneType' object is not subscriptable
+2024-02-16 13:41:41.922 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 535, in _run_script
+    exec(code, module.__dict__)
+  File "/home/ubuntu/app/server.py", line 202, in <module>
+    main()
+  File "/home/ubuntu/app/server.py", line 200, in main
+    app(es)
+  File "/home/ubuntu/app/server.py", line 192, in app
+    if result3["result"]:
+TypeError: 'NoneType' object is not subscriptable
+{'took': 13, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 7, 'relation': 'eq'}, 'max_score': 8.509324, 'hits': [{'_index': 'romanized_titles', '_id': 'SUiwsI0Bql_8TwJm5Nrs', '_score': 8.509324, '_source': {'ipa_title': 'nst*pa̠io̞', 'classificationCode': 30, 'applicationStatus': '등록', 'registrationDate': 20160805.0, 'title': 'NST바이오', 'Unnamed: 0': 381992, 'applicationDate': 20151012.0}}, {'_index': 'romanized_titles', '_id': 'DF-wsI0B-J0-X820yG9Z', '_score': 8.4777, '_source': {'ipa_title': 'pacbot*', 'classificationCode': 40, 'applicationStatus': '등록', 'registrationDate': 20200601.0, 'title': 'PACBOT', 'Unnamed: 0': 23215, 'applicationDate': 20190520.0}}, {'_index': 'romanized_titles', '_id': '7_2wsI0BxgCw0pOG0ruv', '_score': 8.4777, '_source': {'ipa_title': 'ha̠ibo̞', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20171108.0, 'title': '하이보', 'Unnamed: 0': 103086, 'applicationDate': 20170522.0}}, {'_index': 'romanized_titles', '_id': 'TV-wsI0B-J0-X8201YmU', '_score': 8.4777, '_source': {'ipa_title': 'ja̠βo̞', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20211214.0, 'title': '야호', 'Unnamed: 0': 109449, 'applicationDate': 20201028.0}}, {'_index': 'romanized_titles', '_id': 'oEiwsI0Bql_8TwJm4sYS', '_score': 8.4777, '_source': {'ipa_title': 'pa̠me̞', 'classificationCode': 29, 'applicationStatus': '등록', 'registrationDate': 20160926.0, 'title': '밤애', 'Unnamed: 0': 297573, 'applicationDate': 20151216.0}}, {'_index': 'romanized_titles', '_id': '8UiwsI0Bql_8TwJmzIsH', '_score': 7.6299305, '_source': {'ipa_title': 'a̠ɾo̞', 'classificationCode': 29, 'applicationStatus': '등록', 'registrationDate': 20220510.0, 'title': '알오', 'Unnamed: 0': 51224, 'applicationDate': 20201030.0}}, {'_index': 'romanized_titles', '_id': '00iwsI0Bql_8TwJmz6Ag', '_score': 4.75896, '_source': {'ipa_title': 'pa̠io̞蔘*p͈uɾit͡ɕuɭɡiip̚pe̞ɾik͈a̠d͡ʑi全草*pa̠io̞xɯks͈a̠m', 'classificationCode': 33, 'applicationStatus': '등록', 'registrationDate': 20231030.0, 'title': '바이오蔘 뿌리, 줄기, 잎, 베리까지 全草바이오 흑삼', 'Unnamed: 0': 82026, 'applicationDate': 20230523.0}}]}}
+nst*pa̠io̞
+pacbot*
+{'took': 24, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 55, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 11, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 9, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 11, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 13, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 11, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 9, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 20, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 12, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 21, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 19, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 8, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 0, 'relation': 'eq'}, 'max_score': None, 'hits': []}}
+{'took': 13, 'timed_out': False, '_shards': {'total': 1, 'successful': 1, 'skipped': 0, 'failed': 0}, 'hits': {'total': {'value': 26, 'relation': 'eq'}, 'max_score': 9.829477, 'hits': [{'_index': 'romanized_titles', '_id': 'Zl-wsI0B-J0-X820yHpc', '_score': 9.829477, '_source': {'ipa_title': 'kuuni', 'classificationCode': 30, 'applicationStatus': '등록', 'registrationDate': 20190625.0, 'title': '구우니', 'Unnamed: 0': 34220, 'applicationDate': 20181113.0}}, {'_index': 'romanized_titles', '_id': 'dF-wsI0B-J0-X820xVs0', '_score': 7.3721075, '_source': {'ipa_title': 'k͈umbi', 'classificationCode': 29, 'applicationStatus': '등록', 'registrationDate': 20181211.0, 'title': '꿈비', 'Unnamed: 0': 2858, 'applicationDate': 20180109.0}}, {'_index': 'romanized_titles', '_id': 'D1-wsI0B-J0-X820xW06', '_score': 7.3721075, '_source': {'ipa_title': 'kɯmin', 'classificationCode': 30, 'applicationStatus': '등록', 'registrationDate': 20100803.0, 'title': '금인', 'Unnamed: 0': 21348, 'applicationDate': 20100323.0}}, {'_index': 'romanized_titles', '_id': '1P2wsI0BxgCw0pOG2Mpl', '_score': 7.3721075, '_source': {'ipa_title': 'kuang*', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20221010.0, 'title': 'KUANG', 'Unnamed: 0': 113848, 'applicationDate': 20210310.0}}, {'_index': 'romanized_titles', '_id': 'RkiwsI0Bql_8TwJm27Zi', '_score': 7.3721075, '_source': {'ipa_title': 'kuŋnim', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20170109.0, 'title': '궁림', 'Unnamed: 0': 124207, 'applicationDate': 20160518.0}}, {'_index': 'romanized_titles', '_id': 'SUiwsI0Bql_8TwJm4s8T', '_score': 7.3721075, '_source': {'ipa_title': 'k͈umi', 'classificationCode': 30, 'applicationStatus': '등록', 'registrationDate': 20220211.0, 'title': '꾸미', 'Unnamed: 0': 310318, 'applicationDate': 20200911.0}}, {'_index': 'romanized_titles', '_id': 'yUiwsI0Bql_8TwJmzIkG', '_score': 6.1434226, '_source': {'ipa_title': 'kubi', 'classificationCode': 33, 'applicationStatus': '등록', 'registrationDate': 20230612.0, 'title': '굽이', 'Unnamed: 0': 48937, 'applicationDate': 20220930.0}}, {'_index': 'romanized_titles', '_id': '7l-wsI0B-J0-X8201YOT', '_score': 6.1434226, '_source': {'ipa_title': 'kuai*', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20140722.0, 'title': 'KUAI', 'Unnamed: 0': 107812, 'applicationDate': 20131213.0}}, {'_index': 'romanized_titles', '_id': 'AF-wsI0B-J0-X820yHNa', '_score': 5.9196854, '_source': {'ipa_title': 'kunɥi] ~ [kunyt͡ɕʰa̠ɾo̞ks͈usʰu', 'classificationCode': 31, 'applicationStatus': '등록', 'registrationDate': 20141208.0, 'title': '군위 찰옥수수', 'Unnamed: 0': 26406, 'applicationDate': 20130830.0}}, {'_index': 'romanized_titles', '_id': 'BkiwsI0Bql_8TwJm27Vi', '_score': 5.9196854, '_source': {'ipa_title': 'ˈmuni mun', 'classificationCode': 43, 'applicationStatus': '등록', 'registrationDate': 20221207.0, 'title': 'MOONEY MOON', 'Unnamed: 0': 123721, 'applicationDate': 20210406.0}}]}}
+kuuni
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to False.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.31.2.217:8501
+  External URL: http://13.124.84.169:8501
+
+Warning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.
+  Stopping...
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to False.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.31.2.217:8501
+  External URL: http://13.124.84.169:8501
+
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to False.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.31.2.217:8502
+  External URL: http://13.124.84.169:8502
+
+
+  A new version of Streamlit is available.
+
+  See what's new at https://discuss.streamlit.io/c/announcements
+
+  Enter the following command to upgrade:
+  $ pip install streamlit --upgrade
+
+  Stopping...
+  Stopping...
+2024-02-20 02:29:36.015 503 GET /_stcore/health (165.132.5.144) 6.11ms
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to False.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.31.2.217:8501
+  External URL: http://43.202.47.225:8501
+
+2024-02-20 08:07:29.213 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 535, in _run_script
+    exec(code, module.__dict__)
+  File "/data/app/server.py", line 12, in <module>
+    import plotly.express as px
+ModuleNotFoundError: No module named 'plotly'
+Warning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to False.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://172.31.2.217:8501
+  External URL: http://43.202.47.225:8501
+
+Warning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.
