@@ -1,5 +1,5 @@
 # TrademarketProject
-check whether trademark can be registered
+Check whether trademark can be registered
 
 상표권을 등록을 하려면 다음 조건들이 필요하다.
 1. 동일한 이름을 가진 상표가 존재해서는 안된다.
