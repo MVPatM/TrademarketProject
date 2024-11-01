@@ -15,7 +15,7 @@ from io import BytesIO
 from elasticsearch import Elasticsearch
 from konlpy.tag import Okt
 from ko_pron import romanise
-from PronunciationEvaluator.pronun import get_score
+from ..PronunciationEvaluator.pronun import get_score
 import time
 from typing import List, Union, Dict
 
