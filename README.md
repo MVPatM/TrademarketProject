@@ -1,8 +1,6 @@
 # TrademarketProject
 check whether trademark can be registered
 
-![상표](https://github.com/MVPatM/TrademarketProject/assets/76089856/2ff5a5d4-e4ab-4dd0-a49d-7c8e0c163662)
-
 상표권을 등록을 하려면 다음 조건들이 필요하다.
 1. 동일한 이름을 가진 상표가 존재해서는 안된다.
   N-gram tokenizer를 활용해서 elasticsearch에 데이터를 저장하고
