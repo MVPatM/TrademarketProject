@@ -235,7 +235,7 @@ def queryForCheckElastic(name: str, es: Elasticsearch) -> Dict[str, Union[bool, 
         tokens = Tokenize(name)
         IsNegative = False
         negative_token = []
-        token_filter = ['의', '닭볶음탕', '밥', '떱옦기', '도', '밥집', '닭', '찜닭', 'chicken', '꼬꼬댁', '에는', '이었다', '에', '때문', '일주일', '같은', '관형어', '류', '과', '하', '들', '연희동', '등', '예정일', '개', '한', '뒤', '불', '좀', '후', '8일', '이고', '됐다', '5%', '위원회', '기울인다', '이지만', '성적', '7시', '비', '원', '이지', '게', '금통위', '기자간담회', '관광', '홍보', '밖에', '오지', '인가', '무슨', '산후조리', '비용', '1회', '혈압', '대체']
+        token_filter = []
         
         for token in tokens:
             if token in token_filter:
