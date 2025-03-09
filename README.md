@@ -2,7 +2,7 @@
 Check whether trademark can be registered
 
 상표권을 등록되기 위해서 많은 조건을 통과해야할 필요가 있다. 
-1. 상표에 등록되기 위해서 동일한 이름의 상표가 존재해서는 안된다. 
+1. 상표에 등록되기 위해서 동일한 이름의 상표가 존재해서는 안된다.   
   N-gram tokenizer를 활용해서 elasticsearch에 데이터를 저장하고
   동일한 이름을 가진 상표명이 존재하는 지 확인하였.
 
