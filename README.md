@@ -13,7 +13,7 @@
 
 
   
-### 3. 공식적으로 사용하기에 부적절한 단어가 상표명에 포되서는 안된다.  
+### 3. 공식적으로 사용하기에 부적절한 단어가 상표명에 포함되서는 안된다.  
    Huggingface에 배포된 단어의 positiveness와 negativeness의 정도를 측정해주는 AI를 활용해서 해당 단어가 비도덕적인지를 간접적으로 판단해보았다.  
    해당 AI는 elasticsearch cluster에 배포하여 이용하였다. 
 
@@ -22,3 +22,6 @@
 ### 4. 상표를 출원하려는 물품과 관련성이 없어야 한다.  
    예를 들어서 과일가게 이름을 Apple이라고 등록을 하면 안된다. 하지만 IT기업 이름을 Apple이라고 등록하는 것은 가능하다.
    Fasttext AI를 활용하여 상표명과 출원 물품간의 관련성 여부를 판단하였다. 
+
+### 판별 예시
+![Image](https://github.com/user-attachments/assets/75664ac4-1bf8-4e0d-840b-4377ea0b66be)
