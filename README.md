@@ -25,3 +25,4 @@
 
 ### 판별 예시
 ![Image](https://github.com/user-attachments/assets/75664ac4-1bf8-4e0d-840b-4377ea0b66be)
+![Image](https://github.com/user-attachments/assets/0924dad4-2c4c-46a3-b1ad-23d636c2583a)
