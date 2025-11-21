@@ -18,6 +18,9 @@ from ko_pron import romanise
 from ..PronunciationEvaluator.pronun import get_score
 import time
 from typing import List, Union, Dict
+from sqlalchemy import select
+from db_schema import TradeMark
+from db_config import SessionLocal
 
 @st.cache_resource
 def connectToElastic() -> Elasticsearch:
@@ -41,33 +44,17 @@ def download_and_show_image(image_url: str):
     
 def queryForFindSameNameV2(name: str, es: Elasticsearch) -> Dict[str, Union[bool, str]]:
     try:
-        name = name.replace(' ', '')
-        query = {
-            "match": {
-                "title": name
-            }
-        }
+        try:
+        with SessionLocal() as session:
+            stmt = select(TradeMark.name).where(TradeMark.WithoutSpaceName == name.replace(' ', ''))
+            result = session.scalars(stmt).all()
         
-        resp = es.search(index = 'tm_data_ngram', 
-                  body = {"query": query, "size": 500})
-        
-        IsSame = False
-        SameName = None
-        name = name.lower()
-        for ans in resp["hits"]["hits"]:
-            cmp = ans["_source"]["title"].lower()
-            if name == cmp.replace(' ', ''):
-                SameName = ans["_source"]["title"]
-                IsSame = True
-                break
-        
-        if IsSame:
-            ret = {"result": True, "msg": "\"" + SameName +"\"이라는 같은 이름이 상표로 등록이 되어 있어 해당 명은 상표 등록이 불가능합니다."}
+        if result:
+            ret = {"result": True, "msg": "\"" + result[0] +"\"이라는 같은 이름이 상표로 등록이 되어 있어 해당 명은 상표 등록이 불가능합니다."}
             return ret 
-        else:
+        else: 
             ret = {"result": False, "msg": ""}
             return ret
-        
     except Exception as e:
         st.write("error for FindNameV2")
         
