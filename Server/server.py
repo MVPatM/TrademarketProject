@@ -44,7 +44,6 @@ def download_and_show_image(image_url: str):
     
 def queryForFindSameNameV2(name: str, es: Elasticsearch) -> Dict[str, Union[bool, str]]:
     try:
-        try:
         with SessionLocal() as session:
             stmt = select(TradeMark.name).where(TradeMark.WithoutSpaceName == name.replace(' ', ''))
             result = session.scalars(stmt).all()
