@@ -1,7 +1,7 @@
 # TrademarketProject
 
 ### 프로그램 구조도
-
+<img width="2816" height="1536" alt="Image" src="https://github.com/user-attachments/assets/c8839e7b-22df-4b95-bf1d-4775ff4ee859" />
 
 상표권이 등록되기 위해서 많은 조건을 충족해야할 필요가 있다. 하지만 저희는 그 중에서 중요도가 높은 조건 4가지를 선별하여 상표등록 가능성 여부를 판단해보았다. 
 
