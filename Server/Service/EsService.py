@@ -25,8 +25,8 @@ class EsService:
     def queryForFindSameName(self, name: str) -> dict:
         try:
             with get_db_session() as session:
-                stmt = select(TradeMark.name).where(TradeMark.WithoutSpaceName == name.replace(' ', ''))
-                result = session.scalars(stmt).all()
+                trademarkDAO = TradeMarkDAO(session)
+                result = trademarkDAO.find_samename(name)
             
             if result:
                 return {"result": True, "msg": "\"" + result[0] +"\"이라는 같은 이름이 상표로 등록이 되어 있어 해당 명은 상표 등록이 불가능합니다."}
