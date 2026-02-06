@@ -5,13 +5,15 @@ from Model.db_schema import TradeMark
 from ..Config.db_config import get_db_session
 from typing import List, Union, Dict
 from ko_pron import romanise
+from DAO.TradeMarkDAO import TradeMarkDAO
 import eng_to_ipa as ipa
 from dotenv import load_dotenv
 from ..PronunciationEvaluator.pronun import get_score
 from redis import Redis
+from Service.ToIpaService import ToIPAService
 
 class EsService:
-    def __init__(self, r: Redis):
+    def __init__(self, r: Redis, trademarkDAO: TradeMarkDAO, toipaService: ToIPAService):
         load_dotenv()
         username = os.environ['Elastic_Username']
         password = os.environ['Elastic_Password']
@@ -21,12 +23,12 @@ class EsService:
                     basic_auth=(os.environ['Elastic_Username'], os.environ['Elastic_Password']))
         self.r = r
         self.header_ml = {"Content-Type": "application/json", 'Authorization': f'Basic {credentials}'}
+        self.trademarkDAO = trademarkDAO
+        self.toipaService = toipaService
         
     def queryForFindSameName(self, name: str) -> dict:
         try:
-            with get_db_session() as session:
-                trademarkDAO = TradeMarkDAO(session)
-                result = trademarkDAO.find_samename(name)
+            result = self.trademarkDAO.find_samename(name)
             
             if result:
                 return {"result": True, "msg": "\"" + result[0] +"\"이라는 같은 이름이 상표로 등록이 되어 있어 해당 명은 상표 등록이 불가능합니다."}
@@ -43,48 +45,26 @@ class EsService:
             # 로마자 이름 변환
             eng_name = romanise(name, "rr")
 
-            # 한글 이름에 대한 퍼지 쿼리
-            query_kr = {
-                "fuzzy": {
-                    "title": {
-                        "value": name,
-                        "fuzziness": "2"
-                    }
-                }
-            }
-
-            # 로마자 이름에 대한 퍼지 쿼리
-            query_eng = {
-                "fuzzy": {
-                    "eng_title": {
-                        "value": eng_name,
-                        "fuzziness": "2"
-                    }
-                }
-            }
-
             # 한글 이름 검색 실행
-            resp_kr = self.es.search(index="tm_data", body={"query": query_kr})
+            resp_kr = self.trademarkDAO.find_names_by_levenshtein(name)
             # 로마자 이름 검색 실행
-            resp_eng = self.es.search(index="tm_data", body={"query": query_eng})
+            resp_eng = self.trademarkDAO.find_eng_names_by_levenshtein(eng_name)
 
             IsSimilar = False
             SimilarNamesAndDates = []
 
             # 로마자 이름 검색 결과 처리
-            for ans in resp_eng["hits"]["hits"]:
-                similar_title = ans["_source"]["title"]
-                application_date = ans["_source"].get("applicationDate", "출원일 정보 없음")
-                image_url = ans["_source"].get("bigDrawing", None)
-                SimilarNamesAndDates.append((similar_title, application_date, image_url))
+            for ans in resp_eng:
+                similar_title = ans.tradeMarkName
+                application_date = ans.registrationDate
+                SimilarNamesAndDates.append((similar_title, application_date))
                 IsSimilar = True
 
             # 한글 이름 검색 결과 처리
-            for ans in resp_kr["hits"]["hits"]:
-                similar_title = ans["_source"]["title"]
-                application_date = ans["_source"].get("applicationDate", "출원일 정보 없음")
-                image_url = ans["_source"].get("bigDrawing", None)
-                SimilarNamesAndDates.append((similar_title, application_date, image_url))
+            for ans in resp_kr:
+                similar_title = ans.tradeMarkName
+                application_date = ans.registrationDate
+                SimilarNamesAndDates.append((similar_title, application_date))
                 IsSimilar = True
 
             if IsSimilar:
@@ -98,50 +78,24 @@ class EsService:
     def queryForFindSimilarPronun(self, name: str) -> Dict[str, Union[bool, str, List[str]]]:
         try:
             # Convert name to IPA
-            segments = re.split('([가-힣]+)', name)
-            ipa_name = ""
-            for segment in segments:
-                if segment and re.match('[가-힣]+', segment):
-                    ipa_name += romanise(segment, "ipa")
-                else:
-                    ipa_name += ipa.convert(segment)
+            ipa_name = self.toipaService.hangul_to_ipa(name)
             
             # Fuzzy query on ipa_title
-            fuzzy_query = {
-                "query": {
-                    "fuzzy": {
-                        "ipa_title": {
-                            "value": ipa_name,
-                            "fuzziness": "2"
-                        }
-                    }
-                }
-            }
-            resp = self.es.search(index="tm_data", body=fuzzy_query)
-            
+            resp = self.trademarkDAO.find_names_by_ipa_levenshtein(ipa_name)
             SimilarNamesWithScores = []
             
             # For each similar title found
-            for ans in resp['hits']['hits']:
-                title = ans['_source']['title']
-                score = get_score(ipa_name, ans['_source']['ipa_title'])
-                application_date = ans['_source'].get('applicationDate', '출원일 정보 없음')
-                image_url = ans['_source'].get('bigDrawing', None)
+            for ans in resp:
+                title = ans.tradeMarkName
+                score = get_score(ipa_name, ans.ipa_name)
 
-                company_check_query = {
-                    "query": {
-                        "match": {
-                            "column3": title
-                        }
-                    }
-                }
-                large_company_check = self.es.search(index='big_company', body=company_check_query)
-                is_large_company = large_company_check['hits']['total']['value'] > 0
+                # check whether is big company
+                is_large_company = self.trademarkDAO.get_is_large_company_info(title)
                 
                 # Adjust similarity score threshold based on company size
                 if is_large_company and score['score'] > 0.55 or not is_large_company and score['score'] > 0.7:
                     company_label = " (대형 기업)" if is_large_company else ""
-                    SimilarNamesWithScores.append((f"{title}{company_label}", score['score'], application_date, image_url))
+                    SimilarNamesWithScores.append((f"{title}{company_label}", score['score']))
             
             # Sort by similarity score
             SimilarNamesWithScores.sort(key=lambda x: x[1], reverse=True)
